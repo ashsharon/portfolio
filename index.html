@@ -955,9 +955,11 @@ button { font-family: inherit; }
         {label:'DATA & BI', items:['Big data','Pandas','NumPy','Tableau','Power BI','UiPath']},
         {label:'TOOLS & PRACTICE', items:['Git','Docker','Kubernetes','Azure','Jupyter','Code review','Testing & debugging','GitHub Copilot','Claude Code']}
       ]},
-    {kind:'projects', name:'Projects', tag:'PROJECTS', stat:'7 BUILDS', title:'Selected builds',
-      say:"My favourite stop. Seven builds, all open on GitHub.",
+    {kind:'projects', name:'Projects', tag:'PROJECTS', stat:'9 BUILDS', title:'Selected builds',
+      say:"My favourite stop. Nine builds, all open on GitHub.",
       rows:[
+        {name:'Research & Thesis Co-Pilot', desc:'Turns arXiv papers into literature reviews and gap analyses, with a LangGraph checker that rejects unsupported claims. n8n runs the daily ingestion and weekly digest.', url:GH+'/research-thesis-copilot', tech:['Python','LangGraph','RAG','Claude API','Chroma','n8n','FastAPI']},
+        {name:'Autonomous Job-Hunt Agent', desc:'A LangGraph crew that scores job fit from a resume and project writeups, drafts tailored applications and stops for review. A grounding check rejects invented claims.', url:GH+'/autonomous-job-hunt-agent', tech:['Python','LangGraph','RAG','Claude API','n8n','SQLite','FastAPI']},
         {name:'AI Debate Partner with Argument Mining', desc:'A debate practice tool where the AI always argues the other side. It mines the claim, warrant and stance of every turn with an LLM and draws the debate live as a graph of who is rebutting whom.', url:GH+'/AI-Debate-Partner-with-Argument-Mining', tech:['Python','Claude API','LLMs','Argument mining','Streamlit','Graphviz']},
         {name:'Resume-to-Job Fit Explainer', desc:'Goes beyond a single match score. It extracts every requirement from a job post, scores coverage with sentence embeddings, explains real gaps versus transferable experience, and rewrites bullets without inventing any.', url:GH+'/Resume-to-Job-Fit-Explainer', tech:['Python','LLMs','Embeddings','NLP','Streamlit']},
         {name:'Explainable Fake News Detector', desc:'Retrieval-augmented fact-checking instead of a black-box classifier. It pulls the closest passages from a trusted evidence corpus with embeddings, has Claude reason only over that evidence, and returns a verdict with sources and flagged manipulation patterns.', url:GH+'/Fake-News-Detector', tech:['Python','Claude API','RAG','Sentence embeddings','Streamlit']},
